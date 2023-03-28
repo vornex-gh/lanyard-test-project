@@ -1,0 +1,363 @@
+body {
+    padding: 0px;
+    margin: 0px;
+    color: #fff;
+}
+
+a {
+    color: rgb(255, 255, 255);
+    text-decoration: underline;
+}
+
+a:hover {
+    color: rgb(178, 178, 178);
+    text-decoration: underline;
+}
+
+.bg {
+    position: fixed;
+    background-image: url("Assets/bg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100%;
+    width: 100%;
+    filter: blur(8px);
+    transform: scale(1.1);
+}
+
+.card {
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+    -webkit-backdrop-filter: blur(20px);
+    backdrop-filter: blur(20px);
+    background-color: rgba(58, 48, 68, 0.5);
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px rgba(145, 70, 255, 0.2);
+    margin: 10px 0px 10px 0px;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.pdp {
+    position: relative;
+}
+
+.pdpimg {
+    width: 128px;
+    height: 128px;
+    border-radius: 64px;
+}
+
+.status {
+    position: absolute;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    background-color: #fff;
+    bottom: -15px;
+    right: 15px;
+    transform: translate(50%, -50%);
+    border: 2px solid rgba(59, 59, 59, 0.3);
+}
+
+.pfpstatus {
+    position: relative;
+    width: 128px;
+    height: 128px;
+    border-radius: 64px;
+    margin: 36px;
+}
+
+.username {
+    color: #fff;
+    font-size: 2em; 
+    font-family: 'Roboto', sans-serif;
+    padding: 0px;
+    margin-top: 32px;
+    margin-bottom: 0px;
+    margin-right: 32px;
+}
+
+.cstatus {
+    color: #fff;
+    font-size: 1.5em;
+    font-family: 'Roboto', sans-serif;
+    padding: 0px;
+    margin-top: 8px;
+}
+
+.title {
+    color: #fff;
+    font-size: 2.4em;
+    font-family: 'Roboto', sans-serif;
+    padding: 0px;
+    margin-top: 16px;
+    margin-left: 32px;
+    margin-bottom: 0px;
+}
+
+.about {
+    color: #fff;
+    font-size: 1.5em;
+    font-family: 'Roboto', sans-serif;
+    padding: 0px;
+    margin-top: 8px;
+    margin-bottom: 0px;
+    margin-left: 32px;
+    margin-right: 32px;
+}
+
+.aboute {
+    color: #fff;
+    font-size: 1.5em;
+    font-family: 'Roboto', sans-serif;
+    padding: 0px;
+    margin-top: 8px;
+    margin-left: 32px;
+    margin-right: 32px;
+}
+
+.mini {
+    position: absolute;
+    color: #fff;
+    font-size: 1em;
+    font-family: 'Roboto', sans-serif;
+    padding: 0px;
+    margin-top: 8px;
+    margin-left: 8px;
+    margin-bottom: 0px;
+    width: 22px;
+    height: 22px;
+}
+
+.mini:hover {
+    opacity: 0.6;
+}
+
+.spot {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    width: 100%;
+    margin: 36px;
+}
+
+.albumart {
+    width: 128px;
+    height: 128px;
+}
+
+.songtitle {
+    color: #fff;
+    font-size: 1.5em;
+    font-family: 'Roboto', sans-serif;
+    padding: 0px;
+    margin-top: 8px;
+    margin-left: 8px;
+    margin-bottom: 0px;
+}
+
+.songartist {
+    color: #fff;
+    font-size: 1em;
+    font-family: 'Roboto', sans-serif;
+    padding: 0px;
+    margin-top: 8px;
+    margin-left: 8px;
+    margin-bottom: 0px;
+}
+
+.progressbar {
+    height: 8px;
+    width: 100%;
+    margin-top: 8px;
+    margin-left: 8px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0px 0px 16px rgba(255, 255, 255, 0.3);
+}
+
+.progressbar-fill {
+    height: 8px;
+    box-shadow: 0px 0px 16px rgba(0, 117, 255, 0.5);
+    background-color: rgb(0, 117, 255);
+    border-radius: 8px;
+}
+
+.songinfo {
+    padding-left: 16px;
+    width: 100%;
+}
+
+.time {
+    display: flex;
+    flex-direction: row;
+}
+
+.songtime {
+    color: #fff;
+    font-size: 1em;
+    font-family: 'Roboto', sans-serif;
+    padding: 0px;
+    margin-top: 8px;
+    margin-left: 8px;
+    margin-bottom: 0px;
+}
+
+.songtime2 {
+    color: #fff;
+    font-size: 1em;
+    font-family: 'Roboto', sans-serif;
+    padding: 0px;
+    margin-top: 8px;
+    right: 0px;
+    margin-bottom: 0px;
+    position: absolute;
+}
+
+@media screen and (max-width: 949px) {
+    .card {
+        width: 75%;
+    }
+}
+
+@media screen and (max-width: 685px) {
+    .card {
+        width: 100%;
+    }
+}
+
+@media screen and (max-height: 699px) {
+    .pdpimg {
+        width: 96px;
+        height: 96px;
+        border-radius: 48px;
+    }
+    
+    .status {
+        width: 15px;
+        height: 15px;
+        bottom: -7px;
+        right: 7px;
+    }
+    
+    .pfpstatus {
+        width: 96px;
+        height: 96px;
+        border-radius: 48px;
+        margin: 22px;
+    }
+    
+    .username {
+        margin-top: 16px;
+        font-size: 1.5em;
+    }
+
+    .spot {
+        margin: 22px;
+    }
+    
+    .cstatus {
+        font-size: 1em;
+    }
+    
+    .title {
+        font-size: 1.9em;
+    }
+    
+    .about {
+        font-size: 1em;
+    }
+    
+    .aboute {
+        font-size: 1em;
+    }
+    
+    .mini {
+        font-size: 1em;
+        width: 12px;
+        height: 12px;
+    }
+
+    .songtitle {
+        font-size: 1em;
+        margin-top: 4px;
+    }
+    
+    .songartist {
+        font-size: 0.8em;
+        margin-top: 8px;
+    }
+    
+    .albumart {
+        width: 96px;
+        height: 96px;
+    }
+
+    .songtime {
+        margin-top: 4px;
+        font-size: 0.8em;
+    }
+    
+    .songtime2 {
+        margin-top: 4px;
+        font-size: 0.8em;
+    }
+
+    .progressbar {
+        margin-top: 4px;
+        margin-left: 4px;
+    }
+}
+
+@media screen and (max-height: 500px) and (max-width: 685px) { 
+    .container {
+        padding-top: 20%;
+        padding-bottom: 20%;
+    }
+}
+
+@media screen and (max-height: 500px) and (max-width: 949px) { 
+    .container {
+        padding-top: 15%;
+        padding-bottom: 15%;
+    }
+}
+
+@media screen and (max-height: 500px) { 
+    .container {
+        padding-top: 10%;
+        padding-bottom: 10%;
+    }
+}
+
+@media screen and (max-height: 300px) and (max-width: 685px) { 
+    .container {
+        padding-top: 40%;
+        padding-bottom: 40%;
+    }
+}
+
+@media screen and (max-height: 300px) and (max-width: 949px) { 
+    .container {
+        padding-top: 30%;
+        padding-bottom: 30%;
+    }
+}
+
+@media screen and (max-height: 300px) { 
+    .container {
+        padding-top: 20%;
+        padding-bottom: 20%;
+    }
+}
