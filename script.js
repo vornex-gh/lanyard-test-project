@@ -94,7 +94,7 @@ function update(datas) {
         if (upprog !== null) {
             clearInterval(upprog);
         }
-        songtitle.innerHTML = "I'm not listening to anything rn";
+        songtitle.innerHTML = "No song currently playing";
     }
 }
 
